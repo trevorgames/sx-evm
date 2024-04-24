@@ -1,0 +1,21 @@
+{
+    "ActiveProposalsLimiterProposalValidationStrategy": "0x8fcb794a2dc3a00094be367661af9107f133829d",
+    "AvatarExecutionStrategyImplementation": "",
+    "CompTimelockCompatibleExecutionStrategyImplementation": "",
+    "CompVotingStrategy": "",
+    "EthSigAuthenticator": "",
+    "EthTxAuthenticator": "",
+    "MerkleWhitelistVotingStrategy": "",
+    "OZVotesVotingStrategy": "",
+    "OptimisticCompTimelockCompatibleExecutionStrategyImplementation": "",
+    "OptimisticTimelockExecutionStrategyImplementation": "",
+    "PropositionPowerAndActiveProposalsLimiterValidationStrategy": "",
+    "PropositionPowerProposalValidationStrategy": "",
+    "ProxyFactory": "0x1f07690D7259070d6957c52B7A1967E5784b0e3e",
+    "SpaceImplementation": "0x63737E8Cd2ff98CaEB49C5790CbA0cC7723F9b48",
+    "TimelockExecutionStrategyImplementation": "0x3687ceC6dE0F6c2009E54B5A4cd19941f8Fc15Fc",
+    "VanillaAuthenticator": "0x6577a84215bB519e9f30AecF51109eFdebCC0D15",
+    "VanillaProposalValidationStrategy": "0x2eC4b236E312e99388dCBc9A8fAe245CAF5062a5",
+    "VanillaVotingStrategy": "0xB391DB1484B6372893e23E43F9D44acC3F9A7e4C",
+    "WhitelistVotingStrategy": ""
+  }
