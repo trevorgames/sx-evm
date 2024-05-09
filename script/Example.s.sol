@@ -12,22 +12,22 @@ import { Enum } from "@gnosis.pm/safe-contracts/contracts/common/Enum.sol";
 
 // Example script to deploy a space, create a proposal, vote on it, and execute it.
 contract Example is Script {
-    // Paste in the addresses from your json in the /deployments/ folder. The below are from v1.0.2 on goerli.
-    address public proxyFactory = address(0x4B4F7f64Be813Ccc66AEFC3bFCe2baA01188631c);
-    address public spaceImplementation = address(0xd9c46d5420434355d0E5Ca3e3cCb20cE7A533964);
-    address public vanillaVotingStrategy = address(0xC1245C5DCa7885C73E32294140F1e5d30688c202);
-    address public vanillaProposalValidationStrategy = address(0x9A39194F870c410633C170889E9025fba2113c79);
-    address public vanillaAuthenticator = address(0xb9BE0a0093933968E3B4c4fC5d939B6c1Fe45142);
-    address public timelockExecutionStrategyImplementation = address(0xdD5243b799759e2C64bD6CaFD7e57FcbB676f87D);
+    // Paste in the addresses from your json in the /deployments/ folder. The below are from v1.0.0 on trevor sepolia.
+    address public proxyFactory = address(0xf02371881B929D29431784C2Da32e97D8eb662d2);
+    address public spaceImplementation = address(0xB8b7A8c5C4ec86cF542b294246B7392Af9E9723c);
+    address public vanillaVotingStrategy = address(0xE4e377306BcEeD0A1901F459922eaEdCc91cCd30);
+    address public vanillaProposalValidationStrategy = address(0x5438f234157666BaA048808fA69EE7b18075ae06);
+    address public vanillaAuthenticator = address(0x64baD607A830294F64361dDAc444239f2466b9D0);
+    address public timelockExecutionStrategyImplementation = address(0x17260cB33871Be979BFcBb2F607b48F81e49DD96);
 
     // Change the salt to deploy multiple spaces or get a 'salt already used' error
     uint256 public constant saltNonce = 1234;
 
     function run() public {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        uint256 deployerPrivateKey = vm.envUint("DEPLOY_PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        address deployer = address(0x2842c82E20ab600F443646e1BC8550B44a513D82);
+        address deployer = address(0x1E651e6587dF7e5f31b7F7c40C9DEcc782AD836a);
 
         Strategy[] memory votingStrategies = new Strategy[](1);
         votingStrategies[0] = Strategy(vanillaVotingStrategy, new bytes(0));

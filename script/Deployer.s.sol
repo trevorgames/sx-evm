@@ -52,7 +52,7 @@ interface SingletonFactory {
 contract Deployer is Script {
     error SpaceInitializationFailed();
 
-    SingletonFactory internal singletonFactory = SingletonFactory(0xce0042B868300000d44A59004Da54A005ffdcf9f);
+    SingletonFactory internal singletonFactory = SingletonFactory(0xC1E790a9fdC8bf7bb1aA400177a1f40957c458d0);
     address internal deployer;
     string internal deployments;
     string internal deploymentsPath;
